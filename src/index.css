@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(31, 26, 58);
+	overflow: hidden;
+	font-family: 'Montserrat';
+}
+
+.app {
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	width: 80%;
+	margin: 2rem auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.timer {
+	height: 100px;
+	font-size: 4rem;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	justify-content: center;
+	font-weight: 500;
+	color: rgb(70, 64, 104);
+	transition: 0.6s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.digit {
+	color: beige;
+}
+
+.actions {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.btn {
+	padding: 1rem 1.5rem;
+	background-color: rgb(70, 64, 104);
+	outline: none;
+	border: none;
+	font-family: inherit;
+	border-radius: 4px;
+	font-size: 1rem;
+	font-weight: 00;
+	color: beige;
+	transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn:hover {
+	background-color: rgb(52, 47, 77);
+	cursor: pointer;
+}
+
+.btn:active {
+	transform: scale(0.9);
+}
+
+.btn:disabled {
+	cursor: not-allowed;
+	opacity: 20%;
+}
+
+.laps {
+	width: 50%;
+	margin-top: 4rem;
+	font-size: 1rem;
+	font-weight: 500;
+	color: beige;
+}
+
+.laps-container {
+	width: 100%;
+	max-height: 250px;
+	overflow: auto;
+}
+
+.laps h2 {
+	background-color: rgb(52, 47, 77);
+	padding: 1rem;
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+.laps table {
+	width: 100%;
+}
+
+td {
+	padding: 1rem;
+}
+
+.laps-records {
+	background-color: rgb(79, 72, 116);
+}
+
+.laps-records td {
+	padding: 10px;
+}
